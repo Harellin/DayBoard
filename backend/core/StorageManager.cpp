@@ -46,12 +46,16 @@ namespace dayboard {
             model.setDetailsColor(DetailsColor::Blue);
         } else if (detailsColorStr == "Purple") {
             model.setDetailsColor(DetailsColor::Purple);
-        } else if (detailsColorStr == "White") {
-            model.setDetailsColor(DetailsColor::White);
+        } else if (detailsColorStr == "Yellow") {
+            model.setDetailsColor(DetailsColor::Yellow);
         } else if (detailsColorStr == "Pink") {
             model.setDetailsColor(DetailsColor::Pink);
-        } else {
+        } else if (detailsColorStr == "Green") {
             model.setDetailsColor(DetailsColor::Green);
+        } else if (detailsColorStr == "Red") {
+            model.setDetailsColor(DetailsColor::Red);
+        } else {
+            model.setDetailsColor(DetailsColor::White);
         }
 
         QString overlayModeStr = obj.value("overlayMode").toString();
@@ -107,6 +111,12 @@ namespace dayboard {
                 break;
             case DetailsColor::Green:
                 obj["detailsColor"] = "Green";
+                break;
+            case DetailsColor::Red:
+                obj["detailsColor"] = "Red";
+                break;
+            case DetailsColor::Yellow:
+                obj["detailsColor"] = "Yellow";
                 break;
         }
 

@@ -8,12 +8,14 @@ namespace dayboard {
 
     static QColor getEnumDetailsColor(DetailsColor color) {
         switch (color) {
-            case DetailsColor::Black: return QColor("#000000");
+            case DetailsColor::Black:   return QColor("#000000");
             case DetailsColor::Blue:    return QColor("#2e81a4");
             case DetailsColor::Purple:  return QColor("#6b3180");
-            case DetailsColor::White:    return QColor("#ffffff");
+            case DetailsColor::White:   return QColor("#ffffff");
             case DetailsColor::Pink:    return QColor("#b1386c");
-            case DetailsColor::Green:    return QColor("#19966f");
+            case DetailsColor::Green:   return QColor("#19966f");
+            case DetailsColor::Red:     return QColor("#9f2c2c");
+            case DetailsColor::Yellow:  return QColor("#aed032");
         }
         return QColor("#5f6163");
     }

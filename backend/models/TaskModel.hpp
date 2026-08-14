@@ -22,7 +22,8 @@ namespace dayboard {
             void removeTask(int id);
             void updateTask(const Task &task);
 
-            std::optional<Task> getTaskById(int id) const;
+            Task* getTaskById(int id);
+            const Task* getTaskById(int id) const;
             QVector<Task> getTasksByDate(QDate date) const;
             const QVector<Task>& getAllTasks() const;
 

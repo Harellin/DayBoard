@@ -21,7 +21,9 @@ namespace dayboard {
         Purple,
         White,
         Pink,
-        Green
+        Green,
+        Red,
+        Yellow
     };
 
     enum class OverlayMode {

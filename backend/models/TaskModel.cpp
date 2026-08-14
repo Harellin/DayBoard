@@ -31,15 +31,24 @@ namespace dayboard {
         }
     }
 
-    std::optional<Task> TaskModel::getTaskById(int id) const {
+    Task* TaskModel::getTaskById(int id) {
         auto it = std::find_if(tasks_.begin(), tasks_.end(),
             [id](const Task &t) { return t.getId() == id; });
-            
         if (it != tasks_.end()) {
-            return *it;
+            return &(*it);
         }
-        return std::nullopt;
+        return nullptr;
     }
+
+    const Task* TaskModel::getTaskById(int id) const {
+        auto it = std::find_if(tasks_.begin(), tasks_.end(),
+            [id](const Task &t) { return t.getId() == id; });
+        if (it != tasks_.end()) {
+            return &(*it);
+        }
+        return nullptr;
+    }
+
 
     QVector<Task> TaskModel::getTasksByDate(QDate date) const {
         QVector<Task> result;

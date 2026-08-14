@@ -43,7 +43,10 @@
 build/
 Build/
 build-*/
+
+# IDE files
 .vscode/
+.qtcreator/
 
 # CMake generated files
 CMakeFiles/

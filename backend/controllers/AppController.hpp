@@ -8,7 +8,7 @@
 #include <QObject>
 #include <QTimer>
 #include <QString>
-#include "StorageManager.hpp"
+#include "../core/StorageManager.hpp"
 #include "../models/TaskModel.hpp"
 #include "../models/SettingsModel.hpp"
 

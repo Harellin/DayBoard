@@ -7,8 +7,6 @@
 
 namespace dayboard {
 
-    TaskModel::TaskModel() {}
-
     void TaskModel::addTask(const Task &task) {
         tasks_.append(task);
     }
